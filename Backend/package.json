@@ -1,0 +1,36 @@
+{
+  "name": "expense-tacker",
+  "version": "1.0.0",
+  "description": "A Expense Tracker which can help you Track your daily expenses, Works offline as well.",
+  "main": "src/index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "Expense-tracker",
+    "tracker",
+    "expenses",
+    "money",
+    "finance"
+  ],
+  "author": "Himanshu Choyal",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.3",
+    "mailgen": "^2.0.32",
+    "mongoose": "^9.0.1",
+    "nodemailer": "^7.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "prettier": "^3.7.4"
+  }
+}
