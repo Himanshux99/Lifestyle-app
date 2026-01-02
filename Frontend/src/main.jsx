@@ -13,6 +13,7 @@ import Login from "./components/Login.jsx";
 import Register from "./components/Register.jsx";
 import { AuthProvider } from "./contexts/authContext.jsx";
 import "./index.css";
+import { ExpenseContextProvider } from "./contexts/expenseContext.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +21,9 @@ const router = createBrowserRouter(
       path="/"
       element={
         <AuthProvider>
-          <App />
+          <ExpenseContextProvider>
+            <App />
+          </ExpenseContextProvider>
         </AuthProvider>
       }
     >
