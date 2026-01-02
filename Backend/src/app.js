@@ -1,5 +1,6 @@
 import express from "express"
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.routes.js";
 import expenseRoutes from "./routes/expense.routes.js";
 
@@ -8,7 +9,7 @@ const app = express()
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" })); //it parse the form data into a JSON object
 app.use(express.static("public"));
-// app.use(cookieParser());
+app.use(cookieParser());
 
 //CORS configurations
 app.use(
